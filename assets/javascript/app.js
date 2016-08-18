@@ -47,8 +47,6 @@ $('#button').on('click', function() {
 
 	whistle.play().loop=false;
 
-	//GRABBED THIS FROM THE 08-11 TRAIN PREDICTION EXERCISE
-
 	//INITIAL TIME
 	var firstTimeConverted = moment(arrival ,"hh:mm").subtract(1, "years");
 
@@ -74,8 +72,8 @@ $('#button').on('click', function() {
 	trainBase.ref().push({
 		name: name,
 		destination: destination,
-		arrival: arrival,
 		frequency: frequency,
+		arrival: arrival,
 		minutesAway: tMinutesTillTrain,
 
 	});
