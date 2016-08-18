@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/> 
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>*CHUG LIFE*</title>  
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="card-panel">
+			<h1 class="text-center">Train Time</h1>
+			<hr id="splat">
+			<h4 class="text-center">Off Da Railz!</h4>
+		</div>
+	</div>
+
+	<div class="container" id='ground'/>
+		<div class="containter">
+			<div class='row' id="results">
+				<div class='col-md-8 col-md-offset-2'>
+					<div class='table'>
+						<table class="table bordered" style='text-align: center;'>
+							<tr>
+						        <th>Train Name</th>
+						        <th>Destination</th>
+						        <th>Frequency (MIN)</th>
+						        <th>Next Arrival</th>
+						        <th>Minutes Away</th>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr id="split">
+
+		<div class="row">
+	    	<form class="col s12" id="form">
+	      		<div class="row">
+	        		<div class="input-field col s6">
+	          			<input id="name" type="text">
+	          			<label>Train Name</label>
+	        		</div>
+	        		<div class="input-field col s6">
+		          		<input id="destination" type="text">
+		          		<label>Destination</label>
+	        		</div>
+	      		</div>
+	      		<div class="row">
+			        <div class="input-field col s6">
+			          <input placeholder="HH:MM" id="arrival" type="text">
+			          <label>First Train Time (MILITARY TIME)</label>
+			        </div>
+	      		
+		      	
+			        <div class="input-field col s6">
+			          <input placeholder="MM" id="frequency" type="text">
+			          <label>Frequency (MIN)</label>
+			        </div>
+		      	</div>
+			      <button class="btn waves-effect waves-light" id="button" type="submit">ADD TRAIN
+			      	<i class="material-icons right">train</i>
+			      </button>
+			</form>
+		</div>
+	</div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>YO, IT'S OFF DA RAILZ!</h4>
+      <p id="para">You added a train!</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Tally Ho!</a>
+    </div>
+  </div>
+
+    <!-- Modal Structure -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Hey Dummy!</h4>
+      <p>Fill in yer fields.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-g btn-flat">Tarnation!</a>
+    </div>
+  </div>
+
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+<script src="assets/javascript/app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+
+</body>
+
+</html>
